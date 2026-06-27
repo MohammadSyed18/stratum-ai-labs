@@ -30,3 +30,7 @@ The website presents the lab and its project portfolio. The templates in this re
 3. Inspect results and failure cases together.
 4. Identify the next experiment and who owns it.
 5. Record decisions, limitations, and links to artifacts.
+
+## Experiment code
+
+The [selective prediction package](../research/README.md) contains CSV preprocessing, logistic regression, validation-only temperature calibration, confidence-based abstention, risk/coverage evaluation, and feature-perturbation summaries. It includes a synthetic runnable fixture and tests for split isolation, training statistics, calibration, and reproducibility.

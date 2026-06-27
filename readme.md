@@ -23,3 +23,15 @@ The project portfolio records project status. Research directions and planning t
 ## Implementation details
 
 The project portfolio includes accessible text search, category filters, deterministic ranking, and facet counts. Run `npm test` to check the search module.
+
+## Research implementation
+
+[research/](research/README.md) contains a runnable selective-prediction experiment in Python: train-only preprocessing, regularized logistic regression, validation-only probability calibration, abstention threshold selection, and test-set metrics. The website's project-search module and its JavaScript tests remain independent of this experiment package.
+
+```sh
+npm test
+python -m unittest discover -s research/tests -v
+python -m research.selective.cli research/examples/synthetic.csv --out research/runs/example.json
+```
+
+The example dataset is synthetic and demonstrates the code path. It does not establish or reproduce a paper's reported benchmark values.
