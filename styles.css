@@ -143,3 +143,8 @@ footer {
   .hero, .page-header { padding-top: 60px; }
   .statement, .cta, .content, .application { padding: 28px; }
 }
+
+[hidden] { display: none !important; }
+section[aria-label="Find a research project"] { margin: 2rem 0; }
+section[aria-label="Find a research project"] input,
+section[aria-label="Find a research project"] select { font: inherit; padding: .65rem; border: 1px solid currentColor; border-radius: .4rem; max-width: 100%; margin: .4rem; }

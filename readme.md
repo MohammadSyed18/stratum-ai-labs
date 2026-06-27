@@ -19,3 +19,7 @@ Open `index.html` in a browser to preview the static site. The HTML pages share 
 - [ARISE experiment](https://github.com/MohammadSyed18/ARISE-experiment): a separate repository for claims, sources, confidence, and evidence revision.
 
 The project portfolio records project status. Research directions and planning templates are separate from implemented experiments and published results.
+
+## Implementation details
+
+The project portfolio includes accessible text search, category filters, deterministic ranking, and facet counts. Run `npm test` to check the search module.

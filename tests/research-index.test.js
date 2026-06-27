@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {searchProjects,facets} from '../research-index.js';
+const projects=[{id:'a',title:'AI Reasoning Evaluation',summary:'Evidence revision and comparisons',tags:['Research'],status:'Proposed'},{id:'b',title:'Community Navigator',summary:'Local resource evaluation',tags:['Product'],status:'Proposed'}];
+test('all search terms must be covered and title matches rank first',()=>{assert.equal(searchProjects(projects,'evaluation')[0].id,'a');assert.equal(searchProjects(projects,'local evaluation')[0].id,'b');assert.equal(searchProjects(projects,'unmatched').length,0)});
+test('facets and filters are independent of search text',()=>{assert.equal(searchProjects(projects,'',{tag:'Research'}).length,1);assert.deepEqual(facets(projects),[{tag:'Product',count:1},{tag:'Research',count:1}])});
