@@ -1,15 +1,21 @@
-# Stratum AI Labs Website
+# Stratum AI Labs
 
-Starter static website for Stratum AI Labs.
+Website and research-planning resources for Stratum AI Labs, a student-led AI research group.
 
-## Files
-- index.html — homepage
-- fellows.html — Founding Fellows program and application section
-- projects.html — project portfolio page
-- styles.css — design and layout
+## Website
 
-## Next steps
-1. Replace the email application button with a Google Form link.
-2. Upload this folder to GitHub Pages, Netlify, or Vercel.
-3. Create a Discord server and GitHub organization.
-4. Recruit 5–8 founding fellows.
+- `index.html` — lab homepage
+- `fellows.html` — fellows program and application section
+- `projects.html` — project portfolio
+- `styles.css` — shared layout and styling
+
+Open `index.html` in a browser to preview the static site. The HTML pages share the same stylesheet and navigation.
+
+## Research resources
+
+- [Research overview](docs/research-overview.md): uncertainty in prediction, AI in education, and reasoning under changing evidence.
+- [Experiment plan](templates/experiment-plan.md): define a question, baseline, data, metrics, and reproduction steps.
+- [Experiment log](templates/experiment-log.md): record runs, results, limitations, and research decisions.
+- [ARISE experiment](https://github.com/MohammadSyed18/ARISE-experiment): a separate repository for claims, sources, confidence, and evidence revision.
+
+The project portfolio records project status. Research directions and planning templates are separate from implemented experiments and published results.
